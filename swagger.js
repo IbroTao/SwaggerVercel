@@ -11,7 +11,7 @@ const swaggerOptions = {
         },
         servers: [
             { url: "http://localhost:3000" },            // local dev
-            { url: "https://swaggervercel.pxxl.click" }     // production on Render
+            { url: "https://swaggervercel.pxxl.click" }     // production on Pxxl
         ],
         components: {
         securitySchemes: {
