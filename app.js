@@ -1,7 +1,7 @@
     // app.js
     const express = require('express');
     const swaggerUi = require('swagger-ui-express');
-    const swaggerDocument = require('./swagger.js');
+    const swaggerSpec = require('./swagger.js');
     const messageRoutes = require('./routes/authRoutes.js');
     const YAML = require('yamljs');
     const path = require('path');
@@ -16,11 +16,11 @@
 
 
     // Serve Swagger UI
-    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
     // Define your API routes (example)
     app.get('/', (req, res) => {
-        res.json([{  message: 'Welcome to the API!' }]);
+        res.json([{  message: 'Welcome to Gemfinds!' }]);
     });
 
     app.listen(port, () => {
