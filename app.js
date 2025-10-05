@@ -19,8 +19,8 @@
     app.use('/api/auth', messageRoutes);
 
     // Define your API routes (example)
-    app.get('/users', (req, res) => {
-        res.json([{ id: 1, name: 'Alice', age: 45 }, { id: 2, name: 'Bob', age: 30 }]);
+    app.get('/', (req, res) => {
+        res.json([ message: "Welcome to Swagger Vercel!"]);
     });
 
     app.listen(port, () => {
