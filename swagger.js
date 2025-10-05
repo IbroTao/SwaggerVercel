@@ -5,9 +5,9 @@ const swaggerOptions = {
     definition: {
         openapi: '3.0.0',
         info: {
-        title: 'GemFinds API Documentation',
+        title: 'Swagger API Documentation',
         version: '1.0.0',
-        description: 'User authentication and verification endpoints for Personal and Business users',
+        description: 'User auth and verification endpoints for Personal and Business users',
         },
         servers: [
             { url: "http://localhost:3000" },            // local dev
