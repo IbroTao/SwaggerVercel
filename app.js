@@ -3,12 +3,9 @@
     const swaggerUi = require('swagger-ui-express');
     const YAML = require('yamljs');
     const path = require('path');
-    const authRoutes = require('./routes/auth.routes.js');
 
     const app = express();
     const port = process.env.PORT || 3000;
-
-    app.use('/api/auth', authRoutes);
 
     // Load Swagger document
     const swaggerDocument = YAML.load(path.join(__dirname, 'swagger.yaml'));
