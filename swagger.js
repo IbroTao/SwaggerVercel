@@ -5,7 +5,7 @@ const swaggerOptions = {
     definition: {
         openapi: '3.0.0',
         info: {
-        title: 'Swagger API Endpoints Documentation',
+        title: 'New Swagger API Endpoints Documentation',
         version: '1.0.0',
         description: 'User auth and verification endpoints for Personal and Business users',
         },
