@@ -20,7 +20,7 @@
 
     // Define your API routes (example)
     app.get('/', (req, res) => {
-        res.json([{  message: 'Welcome to Gemfinds App!' }]);
+        res.json([{  message: 'Welcome to Gemfinds App Docs!' }]);
     });
 
     app.listen(port, () => {
